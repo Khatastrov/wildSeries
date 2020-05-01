@@ -1,13 +1,17 @@
 // assets/css/app.scss
 
-@import "~bootstrap/scss/bootstrap";
+// first, import the necessary Bootstrap files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
-$primary: darken($primary, 20%);
+// these overide bootstrap's original colors using variables
+$theme-colors: (
+        primary: $purple,
+        secondary: $red
+);
 
-body {
-    background-color: #eeeeee;
+// finally, import Bootstrap
+@import "~bootstrap";
 
-    h1 {
-        color: $primary;
-    }
-}
+// here goes custom scss
