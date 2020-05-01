@@ -13,10 +13,15 @@ class WildController extends AbstractController
      * @Route ("/wild", name="wild_index")
      * @return Response
      */
-    public function index() :Response
+    public function index(): Response
     {
         return $this->render('wild/index.html.twig', [
             'website' => 'Wild Séries',
         ]);
+    }
+
+    public function show(): Response
+    {
+
     }
 }
