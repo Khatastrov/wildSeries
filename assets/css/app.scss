@@ -1,3 +1,13 @@
+// assets/css/app.scss
+
+@import "~bootstrap/scss/bootstrap";
+
+$primary: darken($primary, 20%);
+
 body {
     background-color: #eeeeee;
+
+    h1 {
+        color: $primary;
+    }
 }

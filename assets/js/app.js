@@ -1,3 +1,5 @@
+// assets/js/app.js
+
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -11,4 +13,11 @@ import '../css/app.scss';
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 // import $ from 'jquery';
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+const $ = require('jquery');
+// this "modifies" the jquery module: adding behavior to it
+// the bootstrap module doesn't export/return anything
+require('bootstrap');
+
+$(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+});
