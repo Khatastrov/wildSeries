@@ -133,6 +133,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
@@ -162,6 +163,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="346" y="395" key="#Composer/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1588503252567" />
+    <state x="261" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588510342194">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="261" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1588510342194" />
     <state width="1228" height="271" key="GridCell.Tab.0.bottom" timestamp="1588503237729">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -178,5 +183,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1228" height="271" key="GridCell.Tab.0.right/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1588503237729" />
+    <state x="61" y="78" key="SettingsEditor" timestamp="1588512574100">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="61" y="78" key="SettingsEditor/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1588512574100" />
   </component>
 </project>
