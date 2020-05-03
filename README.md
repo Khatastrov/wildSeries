@@ -26,6 +26,15 @@ Vous êtes alors sur la branche `Master`, placez-vous sur la branche corresponda
  et si vous êtes au-delà de la quête *04_webpack* :   
  `$ yarn encore dev` ce qui installera les assets.   
  
+ Pour la connexion à la base de données, copiez le fichier .env qui se trouve à la racine du projet.
+ Par convention, renommez-le en `env.local`.   
+ Vous modifierez la ligne `DATABASE_URL` avec vos propres informations.
+ 
+ Pour créer la base de données, dans le terminal :   
+ `$ php bin/console doctrine:database:create`   
+ puis la peupler (les classes de migration sont déjà incluses) :     
+ `$ php bin/console doctrine:migrations:migrate`
+ 
 ___
  
  Vous rencontrez un soucis, vous avez une question, n'hésitez pas à me contacter.   
