@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc5079b-395f-418e-9db0-d739ba8df10f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +141,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -165,10 +171,11 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="346" y="395" key="#Composer/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1588503252567" />
-    <state x="261" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588510342194">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="256" y="336" width="595" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588871318008">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="261" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1588510342194" />
+    <state x="256" y="336" width="595" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1588871318008" />
     <state width="1228" height="271" key="GridCell.Tab.0.bottom" timestamp="1588503237729">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
