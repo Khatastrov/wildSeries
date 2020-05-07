@@ -26,8 +26,8 @@ Vous êtes alors sur la branche `Master`, placez-vous sur la branche corresponda
  et si vous êtes au-delà de la quête *04_webpack* :   
  `$ yarn encore dev` ce qui installera les assets.   
  
- Pour la connexion à la base de données, copiez le fichier .env qui se trouve à la racine du projet.
- Par convention, renommez-le en `env.local`.   
+ Pour la connexion à la base de données, copiez le fichier `.env` qui se trouve à la racine du projet.
+ Par convention, renommez-le en `.env.local`.   
  Vous modifierez la ligne `DATABASE_URL` avec vos propres informations.
  
  Pour créer la base de données, dans le terminal :   
