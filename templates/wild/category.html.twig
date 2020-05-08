@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Séries par catégorie : {{ category.name }}{% endblock %}
+
+{% block body %}
+    <main class="container">
+        {% for program in programs %}
+            <h2>{{ loop.index }}) {{ program.title }}</h2>
+        <small>id : {{ program.id }}</small>
+        <p>{{ program.summary }}</p>
+        {% else %}
+            <p>Aucune série trouvée pour la catégorie : {{ category.name }}.</p>
+        {% endfor %}
+    </main>
+{% endblock %}

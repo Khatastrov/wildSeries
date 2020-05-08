@@ -3,6 +3,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Category;
 use App\Entity\Program;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -72,5 +73,45 @@ class WildController extends AbstractController
            'slug' => $slug,
            'program' => $program,
         ]);
+    }
+
+    /**
+     * Get last 3 programs for a selected category
+     *
+     * @Route("/category/{categoryName}", name="show_category")
+     * @param string|null  $categoryName
+     * @return Response
+     */
+    public function showByCategory(?string $categoryName): Response
+    {
+        $category = $this->getDoctrine()
+            ->getRepository(Category::class)
+            ->findOneBy(['name' => $categoryName]);
+
+        if (!$category) {
+            throw $this->createNotFoundException(
+                "There is no category found for '{$categoryName}' in Categories' table."
+            );
+        }
+
+        $programs = $this->getDoctrine()
+            ->getRepository(Program::class)
+            ->findBy(
+                ['category' => $category],
+                ['id' => 'DESC'],
+                3
+            );
+
+        if (!$programs) {
+            throw $this->createNotFoundException(
+                "No programs found for this category : {$category->getName()}."
+            );
+        }
+
+        return $this->render('wild/category.html.twig', [
+            'category' => $category,
+            'programs' => $programs,
+        ]);
+
     }
 }
