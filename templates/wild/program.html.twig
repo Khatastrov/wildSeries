@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ program.title }}{% endblock %}
+
+{% block body %}
+    <main class="container">
+        <h2>{{ program.title }}</h2>
+        <p>{{ program.summary }}</p>
+
+        {% if seasons is not null %}
+            <h3>Liste des saisons :</h3>
+            <ul>
+            {% for season in seasons %}
+                <li><a href="{{ path("wild_show_season", {'id': season.id}) }}">Saison {{ season.number  }} <small>( {{ season.year }} )</small></a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>Ce programme n'a actuellement aucune saison répertoriée.</p>
+        {% endif %}
+
+    </main>
+{% endblock %}
